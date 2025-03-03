@@ -39,7 +39,10 @@ jobs:
           # file includes the install requirements
           python -m pip install Pebble==5.0.7
           python -m pip install networkx==3.1
-
+       #reinstall dependencies   
+      - name: Reinstall dependencies
+        run: |
+          pip install --no-cache-dir --force-reinstall numpy pandas
       # Generate the memote report on the model
       - name: Generate MEMOTE Report
         run: memote report snapshot LL_add_exos.xml
