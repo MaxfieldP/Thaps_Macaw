@@ -1,3 +1,4 @@
+# Made by Helen Scott
 # This is a basic workflow to help you get started with Actions
 
 name: Custom-CI
@@ -41,7 +42,7 @@ jobs:
 
       # Generate the memote report on the model
       - name: Generate MEMOTE Report
-        run: memote report snapshot model.xml
+        run: memote report snapshot LL_add_exos.xml
 
       # Run the macaw tests
       - name: Run MACAW tests
