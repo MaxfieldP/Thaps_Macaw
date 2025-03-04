@@ -17,7 +17,7 @@ def run_macaw(model):
 
 if __name__ == "__main__":
     # Load the model
-    model = cobra.io.read_sbml_model("model.xml")
+    model = cobra.io.read_sbml_model("LL_add_exos.xml")
 
     # Run the MACAW pipeline
     (test_results, edge_list) = run_all_tests(model)
